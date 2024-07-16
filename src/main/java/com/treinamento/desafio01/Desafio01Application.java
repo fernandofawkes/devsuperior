@@ -18,7 +18,7 @@ public class Desafio01Application implements CommandLineRunner {
 
 	@Override
 	public void run(String[] args)  throws Exception {
-		Order order = new Order(995, 1000, 0.2);
+		Order order = new Order(1034, 95.90, 0.0);
 		System.out.println(orderService.receipt(order));
 	}
 

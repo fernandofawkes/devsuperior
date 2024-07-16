@@ -11,7 +11,7 @@ public class OrderService {
     private ShippingService shippingService;
 
     public double total(Order order) {
-        return this.shippingService.shipment(order) + (order.getBase() * (1 - order.getDiscount()));
+        return this.shippingService.shipment(order) + (order.getBase() * (100 - order.getDiscount())/100);
     }
 
     public String receipt(Order order) {
